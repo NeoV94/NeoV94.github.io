@@ -9,14 +9,13 @@
   let reg = new RegExp( '[?&]' + params + '=([^&#]*)', 'i' );
   let queryString = reg.exec(document.location.href);
   return queryString ? queryString[1] : null;
-};
-        var a=getQueryParams('channel');
-    document.getElementById('chat_embed').src="https://www.twitch.tv/embed/"+a+"/chat?parent=NeoV94.github.io"
-    </script
+};</script
 </head>
 <body class="nimbus-is-editor">
 <iframe frameborder="0" scrolling="no" id="chat_embed" src="https://www.twitch.tv/embed/lcs/chat?parent=NeoV94.github.io" height="500" width="350">
 </iframe>
 <input type="text" id="channel" name="channel">
 <button onclick="view()">Go</button>
-</body></html>
+</body>
+        <script>var a=getQueryParams('channel');
+    document.getElementById('chat_embed').src="https://www.twitch.tv/embed/"+a+"/chat?parent=NeoV94.github.io"</script></html>
