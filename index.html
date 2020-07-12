@@ -1,7 +1,13 @@
-<iframe frameborder="0"
-        scrolling="no"
-        id="chat_embed"
-        src="https://www.twitch.tv/embed/lcs/chat?parent=NeoV94.github.io"
-        height="500"
-        width="350">
+<html>
+<head>
+    <script>function view(){
+        var a=document.getElementById("channel").value;
+        document.getElementById('chat_embed').src="https:////www.twitch.tv//embed//"+a+"//chat?parent=NeoV94.github.io";
+        }</script
+</head>
+<body class="nimbus-is-editor">
+<iframe frameborder="0" scrolling="no" id="chat_embed" src="https://www.twitch.tv/embed/lcs/chat?parent=NeoV94.github.io" height="500" width="350">
 </iframe>
+<input type="text" id="channel" name="channel">
+<button onclick="view()">Go</button>
+</body></html>
